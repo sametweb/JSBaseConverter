@@ -1,0 +1,117 @@
+html {
+  background: black;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px auto 0 auto;
+  padding: 50px;
+  background: skyblue;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+h1 {
+  font-size: 25px;
+  margin: 0 0 25px 0;
+}
+
+label {
+  font-size: 0.8em;
+  color: #222;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  position: absolute;
+  z-index: 2;
+  height: 25px;
+  width: 45px;
+}
+
+#number {
+  margin: 5px 0 20px 0;
+  line-height: 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 0 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#submit {
+  background: darkblue;
+  color: white;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  height: 34px;
+  margin-top: 10px;
+}
+
+.bases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px 0 0 0;
+}
+
+.baseLabel {
+  width: 45px;
+  height: 35px;
+  margin-bottom: 4px;
+  display: block;
+  position: relative;
+}
+
+.checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 45px;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 0;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  transition: background-color 0.5s;
+}
+
+input[type="radio"]:hover ~ .checked {
+  background-color: lightblue;
+}
+
+input[type="radio"]:active ~ .checked {
+  background-color: dodgerblue;
+}
+
+input[type="radio"]:selected:hover ~ .checked {
+  background-color: dodgerblue;
+}
+
+input[type="radio"]:checked ~ .checked {
+  background-color: darkblue;
+  color: white;
+}
+
+#resultContainer {
+  display: none;
+}
+
+#result {
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
