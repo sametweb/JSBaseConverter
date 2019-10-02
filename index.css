@@ -6,11 +6,17 @@ body {
   font-family: sans-serif;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   width: 300px;
-  margin: 10px auto 0 auto;
+  margin: 0 auto;
   padding: 50px;
   background: skyblue;
   border-radius: 10px;
@@ -34,6 +40,7 @@ input[type="radio"] {
   z-index: 2;
   height: 45px;
   width: 45px;
+  margin: 0;
 }
 
 #number {
@@ -117,7 +124,7 @@ input[type="radio"]:checked ~ .checked {
   width: 100%;
   margin: 5px 0 20px 0;
   line-height: 45px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
   border: 0;
