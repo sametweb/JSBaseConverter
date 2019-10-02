@@ -30,10 +30,9 @@ label {
 input[type="radio"] {
   opacity: 0;
   cursor: pointer;
-  margin: 0 10px 0 0;
   position: absolute;
   z-index: 2;
-  height: 25px;
+  height: 45px;
   width: 45px;
 }
 
@@ -54,8 +53,9 @@ input[type="radio"] {
   width: 100%;
   border: 0;
   border-radius: 10px;
-  height: 34px;
+  height: 45px;
   margin-top: 10px;
+  font-size: 22px;
 }
 
 .bases {
@@ -67,7 +67,7 @@ input[type="radio"] {
 
 .baseLabel {
   width: 45px;
-  height: 35px;
+  height: 45px;
   margin-bottom: 4px;
   display: block;
   position: relative;
@@ -77,15 +77,15 @@ input[type="radio"] {
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
+  height: 45px;
   width: 45px;
   background-color: #fff;
   border-radius: 15px;
   z-index: 0;
   box-sizing: border-box;
   text-align: center;
-  line-height: 25px;
-  font-size: 15px;
+  line-height: 45px;
+  font-size: 18px;
   transition: background-color 0.5s;
 }
 
