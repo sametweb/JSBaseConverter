@@ -11,8 +11,14 @@ function getValue(value) {
 }
 
 function convertBase() {
-  if (isNaN(number.value)) {
-    alert("Please enter a number!");
+  if (!number.value) {
+    alert("Please enter a decimal number!");
+    resultContainer.style.display = "none";
+    return true;
+  } else if (!base.value) {
+    alert("Please select a base to convert!");
+    resultContainer.style.display = "none";
+
     return true;
   }
 

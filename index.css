@@ -1,3 +1,7 @@
+* {
+  box-sizing: margin-box;
+}
+
 html {
   background: black;
 }
@@ -6,18 +10,13 @@ body {
   font-family: sans-serif;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .container {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  max-width: 300px;
+  width: 95%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px;
   background: skyblue;
   border-radius: 10px;
   z-index: -2;
@@ -38,9 +37,8 @@ input[type="radio"] {
   cursor: pointer;
   position: absolute;
   z-index: 2;
-  height: 45px;
-  width: 45px;
-  margin: 0;
+  height: 40px;
+  width: 40px;
 }
 
 #number {
@@ -61,7 +59,7 @@ input[type="radio"] {
   border: 0;
   border-radius: 10px;
   height: 45px;
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 22px;
 }
 
@@ -73,25 +71,26 @@ input[type="radio"] {
 }
 
 .baseLabel {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   margin-bottom: 4px;
   display: block;
   position: relative;
+  margin: 0 4px 8px 0;
 }
 
 .checked {
   position: absolute;
   top: 0;
   left: 0;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   background-color: #fff;
   border-radius: 15px;
   z-index: 0;
   box-sizing: border-box;
   text-align: center;
-  line-height: 45px;
+  line-height: 40px;
   font-size: 18px;
   transition: background-color 0.5s;
 }
